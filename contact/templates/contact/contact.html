@@ -44,7 +44,7 @@
             </div>
             <div class="texto-presentacion">
                 <h1>Bienvenido a Keratech</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Revolución digital a tu medida</p>
             </div>
         </div>
     </section>
@@ -57,11 +57,11 @@
             <div class="lista-servicios">
                 <div class="elemento-servicios">
                     <div class="imagen-elemento-servicios">
-                        <img src="{% static 'core/img/icono-prueba.png' %}" alt="">
+                        <img src="{% static 'core/icons/i-web-design.png' %}" alt="">
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Desarrollo Web</h3>
-                        <h4>Lo hacemos a medida de tus sueños.</h4>
+                        <h4>Llevamos tu emprendimiento a la web.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
                         <a href="" class="boton">Más información</a>
@@ -69,11 +69,11 @@
                 </div>
                 <div class="elemento-servicios">
                     <div class="imagen-elemento-servicios">
-                        <img src="{% static 'core/img/icono-prueba.png' %}" alt="">
+                        <img src="{% static 'core/icons/i-workshops.png' %}" alt="">
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Talleres</h3>
-                        <h4>Ven y práctica con nosotros.</h4>
+                        <h4>Aprende haciendo y haz para aprender.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
                         <a href="" class="boton">Más información</a>
@@ -81,11 +81,11 @@
                 </div>
                 <div class="elemento-servicios">
                     <div class="imagen-elemento-servicios">
-                        <img src="{% static 'core/img/icono-prueba.png' %}" alt="">
+                        <img src="{% static 'core/icons/i-class.png' %}" alt="">
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Clases</h3>
-                        <h4>Ven y práctica con nosotros.</h4>
+                        <h4>¿Problemas con tu PC? Lo arreglamos.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
                         <a href="" class="boton">Más información</a>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="elemento-servicios">
                     <div class="imagen-elemento-servicios">
-                        <img src="{% static 'core/img/icono-prueba.png' %}" alt="">
+                        <img src="{% static 'core/icons/i-support.png' %}" alt="">
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Soporte</h3>
@@ -113,11 +113,13 @@
                 <h3>Conoce más sobre nosotros</h3>
             </div>
             <div class="texto-nosotros">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Dolor animi</span>, sit tenetur ratione libero quidem cum nulla ipsa corporis vel ea nobis non fuga maxime nesciunt accusantium reprehenderit quos! Quia, enim aperiam, ab cumque recusandae eligendi sequi reprehenderit reiciendis, <span>qui officiis magni nam quis</span> similique eum obcaecati in sunt est quod nisi! Accusantium magnam dolore reprehenderit fuga nam ab dolor, voluptates adipisci nulla maiores ipsam ea, possimus, blanditiis eligendi commodi iure nemo molestias at voluptatibus pariatur doloribus iusto quasi quaerat! Molestiae deleniti commodi accusamus omnis, harum sed consectetur alias non eaque cupiditate quas exercitationem! Sint consequuntur distinctio a dolores doloribus.</p>
+                <p><span>Keratech</span> es un equipo comprometido con el desarrollo tecnológico no solo de negocios, sino de personas en general. Creemos que toda persona de cualquier índole tiene derecho a ser parte de la <span>revolución digital</span> que estamos viviendo actualmente.</p>
+                <p>Es por esto que nuestra filosofía de trabajo y enseñazas no solo se limita a dar un servicio sino una <span>experiencia de vida</span> para el usuario. Contamos con gente que ama lo que hace y vive de ello, por lo que no solo transmitiremos conocimientos teóricos, sino <span>situaciones reales y prácticas</span>.</p>
+                <p>También tenemos las herramientas necesarias para que digitalices tu negocio y tus ganas de emprender. Si te interesa contar con nuestros servicios <a href="#seccion-contacto"><span>contáctanos aquí</span></a>.</p>  
             </div>
         </div>
     </section>
-    <!-- <section class="seccion-blog" id="seccion-blog">
+    <section class="seccion-blog" id="seccion-blog">
         <div class="contenido">
             <div class="titulo-seccion">
                 <h2>Blog Keratech</h2>
@@ -203,20 +205,19 @@
                     </div>
                 </div>
                 <div class="elementos-formulario-contacto">
-                    <div class="elemento-formulario-contacto">
-                        
+                    <div class="elemento-formulario-contacto">               
                             <label for="id_celular">Celular:</label> 
                             <input type="text" name="celular" class="form-control pl-5" placeholder="Numero de contacto" maxlength="12" minlength="7" required id="id_celular">
                     </div>
                     <div class="elemento-formulario-contacto">
-                        
                             <label for="id_email">Email:</label> 
                             <input type="email" name="email" class="form-control pl-5" placeholder="Escribe tu email" maxlength="100" minlength="3" required id="id_email">
                     </div>
                 </div>
-                
-                    <label for="id_asunto">Asunto:</label> <input type="text" name="asunto" class="form-control pl-5" placeholder="Asunto" maxlength="200" minlength="3" required id="id_asunto">
-                
+                <div class="elemento-formulario-contacto-solo">
+                    <label for="id_asunto">Asunto:</label> 
+                    <input type="text" name="asunto" class="form-control pl-5" placeholder="Asunto" maxlength="200" minlength="3" required id="id_asunto">    
+                </div>
                 <!-- <label for="id_asunto">Asunto</label>
                 <select name="asunto" id="id_asunto">
                     <option value="desarrollo-web">Desarrollo Web</option>
@@ -225,12 +226,10 @@
                     <option value="soporte">Soporte</option>
                     <option value="otro">Otros</option>
                 </select> -->
-                
-                    <label for="id_content">Contenido:</label> 
-                    <textarea name="content" cols="40" rows="4" class="form-control pl-5" placeholder="Escribe tu mensaje..." maxlength="1000" minlength="10" required id="id_content">
-                </textarea>
+                <label for="id_content">Contenido:</label> 
+                <textarea name="content" cols="40" rows="4" class="form-control pl-5" placeholder="Escribe tu mensaje..." maxlength="1000" minlength="10" required id="id_content"></textarea>
                 <div class="boton-seccion-contacto">
-                    <input class="boton" type="submit" value="Enviar">
+                    <input class="boton-contacto" type="submit" value="Enviar">
                 </div>
             </form>
         </div>
@@ -241,7 +240,7 @@
                 <p>© 2020 Todos los derechos reservados. Desarrollado por <span>Keratech</span></p>
             </div>
             <div class="redes-footer">
-                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/keratechperu/"><i class="fab fa-facebook-f"></i></a>
                 <a href=""><i class="fab fa-youtube"></i></a>
                 <a href=""><i class="fab fa-github"></i></a>
             </div>

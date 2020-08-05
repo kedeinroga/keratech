@@ -444,7 +444,6 @@ p {
     background-color: var(--blanco);
     border: 1px solid var(--colorSecundario);
     padding: 1rem;
-    transition: all 0.45s;
 }
 
 .elemento-servicios:hover .boton-elemento-servicios {
@@ -533,6 +532,22 @@ p {
 .texto-nosotros p span {
     color: var(--colorSecundario);
     font-weight: 700;
+}
+
+.texto-nosotros a {
+    text-decoration: none;
+    border-bottom: 4px solid var(--colorSecundario);
+    padding-bottom: 0.5rem;
+}
+
+.texto-nosotros a:hover {
+    opacity: 0.75;
+    transition: all 0.45s;
+}
+
+.texto-nosotros a:not(:hover) {
+    opacity: 1;
+    transition: all 0.45s;
 }
 
 @media (min-width: 768px) {
@@ -730,14 +745,41 @@ p {
     flex-direction: column;
 }
 
+.elemento-formulario-contacto-solo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
 .boton-seccion-contacto {
     text-align: center;
     margin-top: 2rem;
 }
 
-.contact-ok {
+.boton-seccion-contacto input[type=submit] {
+    background-color: transparent;
+    color: var(--plomo);
+    font-size: 2rem;
+    text-decoration: none;
     text-align: center;
-    margin-top: 4rem;
+    border: none;
+    border-bottom: 4px solid var(--colorSecundario);
+    border-radius: 0;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+}
+
+.boton-seccion-contacto input[type=submit]:hover {
+    color: var(--gris);
+    border-bottom: 4px solid var(--plomo);;
+    transition: all 0.45s;
+}
+
+.boton-seccion-contacto input[type=submit]:not(:hover) {
+    color: var(--plomo);
+    border-bottom: 4px solid var(--colorSecundario);
+    transition: all 0.45s;
 }
 
 @media (min-width: 768px) {
@@ -753,7 +795,7 @@ p {
 
 .seccion-footer {
     height: 20rem;
-    background-image: url({% static 'core/img/imagen-footer.jpg' %});
+    background-image: url(/img/imagen-footer.jpg);
     background-position: center center;
     background-size: cover;
 }
