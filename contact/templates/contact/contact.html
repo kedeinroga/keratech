@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Keratech</title>
+    <title>Keratech - Revolución digital a tu medida</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:wght@300;400;500;600;700;900|Dancing+Script:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'core/css/normalize.css' %}">
     <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
@@ -15,7 +15,23 @@
     <script type="text/javascript" src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
 </head>
 
-<body>
+<body class="hidden">
+    <div class="preloader" id="preloader">
+        <div class="lds-default">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <header class="seccion-header">
         <div class="contenido-header">
             <nav class="barra-header">
@@ -28,7 +44,7 @@
                 <ul class="menu-header"> 
                     <li><a href="#seccion-servicios">Servicios</a></li>
                     <li><a href="#seccion-nosotros">Nosotros</a></li>
-                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                    <li><a href="#seccion-blog">Blog</a></li>
                     <li><a href="#seccion-contacto">Contacto</a></li>
                 </ul>
                 <label for="check" class="icono-menu">
@@ -64,7 +80,7 @@
                         <h4>Llevamos tu emprendimiento a la web.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="" class="boton">Más información</a>
+                        <a href="#" class="boton">Más información</a>
                     </div>
                 </div>
                 <div class="elemento-servicios">
@@ -76,7 +92,7 @@
                         <h4>Aprende haciendo y haz para aprender.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="" class="boton">Más información</a>
+                        <a href="#" class="boton">Más información</a>
                     </div>
                 </div>
                 <div class="elemento-servicios">
@@ -88,7 +104,7 @@
                         <h4>¿Problemas con tu PC? Lo arreglamos.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="" class="boton">Más información</a>
+                        <a href="#" class="boton">Más información</a>
                     </div>
                 </div>
                 <div class="elemento-servicios">
@@ -100,7 +116,7 @@
                         <h4>Ven y práctica con nosotros.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="" class="boton">Más información</a>
+                        <a href="#" class="boton">Más información</a>
                     </div>
                 </div>
             </div>
@@ -128,59 +144,59 @@
             <div class="lista-blog">
                 <div class="elemento-blog">
                     <div class="imagen-elemento-blog">
-                        <img src="{% static 'core/img/imagen-blog.jpg' %}" alt="">
+                        <img src="{% static 'core/img/imagen-blog-1.png' %}" alt="">
                         <div class="datos-elemento-blog">
                             <div class="autor-datos-elemento-blog">
                                 <i class="fas fa-user-circle"></i>
-                                <h4>Admin</h4>
+                                <h4>Team Keratech</h4>
                             </div>
                             <div class="fecha-datos-elemento-blog">
                                 <i class="far fa-calendar-alt"></i>
-                                <h4>14 de Enero, 2020</h4>
+                                <h4>07 de Febrero, 2020</h4>
                             </div>
                         </div>
                     </div>
                     <div class="texto-elemento-blog">
                         <div class="titulo-elemento-blog">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium natus rem quod rerum nesciunt.</h3>
+                            <h3>Keratech, ¿Otra empresa de servicios tecnológicos más?</h3>
                         </div>
                         <div class="parrafo-elemento-blog">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, excepturi. Accusantium adipisci in reiciendis minima ut dolor tempore, consectetur dolorum asperiores sint fugiat a voluptas minus commodi molestias alias veniam?</p>
                         </div>
                     </div>
                     <div class="boton-elemento-blog">
-                        <a href="#" class="boton">Ver más</a>
+                        <a href="{% url 'blog' %}" class="boton">Ver más</a>
                     </div>
                 </div>
                 <div class="elemento-blog">
                     <div class="imagen-elemento-blog">
-                        <img src="{% static 'core/img/imagen-blog.jpg' %}" alt="">
+                        <img src="{% static 'core/img/imagen-blog-2.png' %}" alt="">
                         <div class="datos-elemento-blog">
                             <div class="autor-datos-elemento-blog">
                                 <i class="fas fa-user-circle"></i>
-                                <h4>Admin</h4>
+                                <h4>Ins. Edwin Mendoza</h4>
                             </div>
                             <div class="fecha-datos-elemento-blog">
                                 <i class="far fa-calendar-alt"></i>
-                                <h4>14 de Enero, 2020</h4>
+                                <h4>03 de Agosto, 2020</h4>
                             </div>
                         </div>
                     </div>
                     <div class="texto-elemento-blog">
                         <div class="titulo-elemento-blog">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni praesentium natus rem quod rerum nesciunt.</h3>
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                         </div>
                         <div class="parrafo-elemento-blog">
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, excepturi. Accusantium adipisci in reiciendis minima ut dolor tempore, consectetur dolorum asperiores sint fugiat a voluptas minus commodi molestias alias veniam?</p>
                         </div>
                     </div>
                     <div class="boton-elemento-blog">
-                        <a href="#" class="boton">Ver más</a>
+                        <a href="{% url 'blog' %}   " class="boton">Ver más</a>
                     </div>
                 </div>
             </div>
             <div class="boton-seccion-blog">
-                <a href="#" class="boton-seccion">Lee más aquí</a>                
+                <a href="{% url 'blog' %}" class="boton-seccion">Lee más aquí</a>                
             </div>
         </div>
     </section> -->
@@ -221,14 +237,6 @@
                     <label for="id_asunto">Asunto:</label> 
                     <input type="text" name="asunto" class="form-control pl-5" placeholder="Asunto" maxlength="200" minlength="3" required id="id_asunto">    
                 </div>
-                <!-- <label for="id_asunto">Asunto</label>
-                <select name="asunto" id="id_asunto">
-                    <option value="desarrollo-web">Desarrollo Web</option>
-                    <option value="talleres">Talleres</option>
-                    <option value="clases">Clases</option>
-                    <option value="soporte">Soporte</option>
-                    <option value="otro">Otros</option>
-                </select> -->
                 <label for="id_content">Contenido:</label> 
                 <textarea name="content" cols="40" rows="4" class="form-control pl-5" placeholder="Escribe tu mensaje..." maxlength="1000" minlength="10" required id="id_content"></textarea>
                 <div class="boton-seccion-contacto">
@@ -250,6 +258,7 @@
         </div>
     </footer>
     <script src="{% static 'core/js/slider.js' %}"></script>
+    <script src="{% static 'core/js/preloader.js' %}"></script>
 </body>
 
 </html>
