@@ -5,7 +5,8 @@ from .models import Post, Category
 
 def blog(request):
     posts = Post.objects.all()
-    return render(request, "blog/blog.html", {'posts':posts})
+    #return render(request, "blog/blog.html", {'posts':posts})
+    return render(request, "core/working.html")
 
 def category(request, category_id):
     category = get_object_or_404(Category, id=category_id)

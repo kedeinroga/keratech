@@ -1,0 +1,83 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Keratech</title>
+   <link href="https://fonts.googleapis.com/css?family=Lato:wght@300;400;500;600;700;900|Dancing+Script:400,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="{% static 'core/css/normalize.css' %}">
+   <link rel="stylesheet" href="{% static 'core/css/estilos.css' %}">
+   <link rel="icon" href="{% static 'core/img/favicon-16x16.png' %}">
+   <script src="https://kit.fontawesome.com/08c3f66ede.js" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="{% static 'core/js/jquery-3.4.1.min.js' %}"></script>
+</head>
+
+<body class="hidden">
+   <div class="preloader" id="preloader">
+       <div class="lds-default">
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+           <div></div>
+       </div>
+   </div>
+   <header class="seccion-header">
+       <div class="contenido-header">
+           <nav class="barra-header">
+               <input type="checkbox" id="check">
+               <a href="{% url 'contact' %}">
+                   <div class="logo-header">
+                       <img src="{% static 'core/img/logotipo.png' %}" alt="">
+                   </div>
+               </a>
+               <ul class="menu-header"> 
+                   <li><a href="#seccion-servicios">Servicios</a></li>
+                   <li><a href="#seccion-nosotros">Nosotros</a></li>
+                   <li><a href="#seccion-blog">Blog</a></li>
+                   <li><a href="#seccion-contacto">Contacto</a></li>
+               </ul>
+               <label for="check" class="icono-menu">
+                   <i class="fas fa-bars"></i>
+               </label>
+           </nav>
+       </div>
+   </header>
+   <section class="seccion-working">
+       <div class="contenido-working">
+           <div class="imagen-working">
+               <img src="{% static 'core/icons/i-working.png' %}" alt="">
+           </div>
+           <div class="texto-working">
+               <h1>Página en construcción</h1>
+               <p>Estamos trabajando arduamente para tener lista esta sección de nuestra página el 01 de Setiembre del 2020.</p>
+           </div>
+       </div>
+   </section>
+   <footer class="seccion-footer">
+       <div class="contenido-footer">
+           <div class="texto-footer">
+               <p>© 2020 Todos los derechos reservados. Desarrollado por <span>Keratech</span></p>
+           </div>
+           <div class="redes-footer">
+               <a href="https://www.facebook.com/keratechperu/"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.youtube.com/channel/UCaxMOOtKsQgPjxNWyLAW8Yg"><i class="fab fa-youtube"></i></a>
+               <a href="https://github.com/keratech?tab=repositories"><i class="fab fa-github"></i></a>
+           </div>
+       </div>
+   </footer>
+   <script src="{% static 'core/js/slider.js' %}"></script>
+   <script src="{% static 'core/js/preloader.js' %}"></script>
+</body>
+
+</html>
