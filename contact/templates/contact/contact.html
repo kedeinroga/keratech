@@ -1,6 +1,6 @@
- {% load static %} 
+{% load static %} 
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -80,7 +80,7 @@
                         <h4>Llevamos tu emprendimiento a la web.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="#" class="boton">Más información</a>
+                        <a href="{% url 'blog' %}" class="boton">Más información</a>
                     </div>
                 </div>
                 <div class="elemento-servicios">
@@ -89,10 +89,10 @@
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Talleres</h3>
-                        <h4>Aprende haciendo y haz para aprender.</h4>
+                        <h4>Ven y práctica con nosotros.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="#" class="boton">Más información</a>
+                        <a href="{% url 'blog' %}" class="boton">Más información</a>
                     </div>
                 </div>
                 <div class="elemento-servicios">
@@ -101,10 +101,10 @@
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Clases</h3>
-                        <h4>¿Problemas con tu PC? Lo arreglamos.</h4>
+                        <h4>Aprende haciendo y haz para aprender.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="#" class="boton">Más información</a>
+                        <a href="{% url 'blog' %}" class="boton">Más información</a>
                     </div>
                 </div>
                 <div class="elemento-servicios">
@@ -113,10 +113,10 @@
                     </div>
                     <div class="texto-elemento-servicios">
                         <h3>Soporte</h3>
-                        <h4>Ven y práctica con nosotros.</h4>
+                        <h4>¿Problemas con tu PC? Lo arreglamos.</h4>
                     </div>
                     <div class="boton-elemento-servicios">
-                        <a href="#" class="boton">Más información</a>
+                        <a href="{% static 'core/pdf/soporte-tecnico_keratech.pdf' %}" class="boton">Más información</a>
                     </div>
                 </div>
             </div>
@@ -161,7 +161,7 @@
                             <h3>Keratech, ¿Otra empresa de servicios tecnológicos más?</h3>
                         </div>
                         <div class="parrafo-elemento-blog">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, excepturi. Accusantium adipisci in reiciendis minima ut dolor tempore, consectetur dolorum asperiores sint fugiat a voluptas minus commodi molestias alias veniam?</p>
+                            <p>En los últimos 10 años hemos visto una proliferación de distintos emprendimientos tecnológicos de toda índole por toda la web y casi todas ofrecen lo mismo. Entonces, ¿Por qué confiar en Keratech?</p>
                         </div>
                     </div>
                     <div class="boton-elemento-blog">
@@ -184,10 +184,10 @@
                     </div>
                     <div class="texto-elemento-blog">
                         <div class="titulo-elemento-blog">
-                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                            <h3>Vision artificial ¿Es posible hacerla sin pasar por la universidad?</h3>
                         </div>
                         <div class="parrafo-elemento-blog">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, excepturi. Accusantium adipisci in reiciendis minima ut dolor tempore, consectetur dolorum asperiores sint fugiat a voluptas minus commodi molestias alias veniam?</p>
+                            <p>El término Visión artificial o visión por computador es muy sonado en la actualidad. Lo que creíamos antes que era pura ciencia ficción, ahora ya es una realidad. ¿Es necesario pasar por la universidad para poder desarrollarte en esta área?</p>
                         </div>
                     </div>
                     <div class="boton-elemento-blog">
@@ -199,7 +199,7 @@
                 <a href="{% url 'blog' %}" class="boton-seccion">Lee más aquí</a>                
             </div>
         </div>
-    </section> -->
+    </section>
     <section class="seccion-contacto" id="seccion-contacto">
         <div class="contenido contenido-contacto">
             <div class="titulo-seccion">
