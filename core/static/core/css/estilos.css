@@ -970,16 +970,19 @@ p {
 }
 
 .contenido-working {
+    width: 85%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     padding: 8rem 0;
+    margin: 0 auto;
 }
 
 .imagen-working {
-    width: 20rem;
+    width: 18rem;
     margin: 0 auto;
 }
 
@@ -987,8 +990,8 @@ p {
     text-align: center;
 }
 
-@media (min-width: 768px) {
-    
+.boton-working {
+    margin-top: 4rem;
 }
 
 /*** ----------- ***/
