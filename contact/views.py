@@ -20,7 +20,7 @@ def contact(request):
             # Creamos el correo
             email = EmailMessage(
                 "Keratech: Nuevo mensaje de contacto",
-                "De {}{} <{}> <{}>\n\nAsunto:\n\n{}\n\nEscribió:\n\n{}".format(name, apellido, email, celular, asunto, content),
+                "De {} {} <{}> <{}>\n\nAsunto:\n\n{}\n\nEscribió:\n\n{}".format(name, apellido, email, celular, asunto, content),
                 "no-contestar@keratech.pe",
                 ["keratechperu@gmail.com"],
                 reply_to=[email]
